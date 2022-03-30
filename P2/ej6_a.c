@@ -10,6 +10,6 @@ int main(int argc, char** argv){
 	
 	printf("Representacion binaria: ");
 	while(i--)
-		printf("%d", ((n >> i)&1) );
+		printf("%d", ( (n >> i) & 1 ));
 	printf("b\n");
-}
+} 
