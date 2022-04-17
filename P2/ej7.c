@@ -11,7 +11,6 @@ float calcE(unsigned int N, float** lut, float(*interpolacion)(unsigned int, flo
 float nearestNborInter(unsigned int N, float** lut, float x);
 float linInter(unsigned int N, float **lut, float x);
 
-
 int main(int argc, char** argv){
 	if(argc != 2){
 		printf("Error. Uso:\n$./ej7_a N\ndonde N es un entero.\n");
