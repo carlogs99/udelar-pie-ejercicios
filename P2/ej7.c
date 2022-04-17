@@ -66,11 +66,12 @@ float linInter(unsigned int N, float** lut, float x){
 	float minDif = UINT_MAX; 
 	int x0, x1;
 	for(int i = 0 ; i < N ; i++){
-		if(abs(i-x) < minDif){
+		if((abs(i-x) < minDif) && (i <= x)){
 			x0 = i;
 			minDif = abs(i-x);
 		}
 	}	
-	x1 = ( abs((x0-1)-x) < abs((x0+1)-x) ) ? (x0-1) : (x0+1);
+	x1 = x0 + 1;
+	
 	return (x1 - x)*(*lut)[x0] + (x - x0)*(*lut)[x1];
 }
