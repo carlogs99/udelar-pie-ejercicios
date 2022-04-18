@@ -1,12 +1,10 @@
-#include <stdio.h>
-
 #define N 10
 #define M 3
 int numeritos[N] = {-1,1,3,1,2,0,0,1,2,2};
 
 void calcular_histograma(int x[], int m, int n, int (*f)[M]);
 
-int main(int argc, char** argv){
+int main(){
 	int i;
 	int f[M]; /* frecuencias */
 	float P[M]; /* probabilidades */
